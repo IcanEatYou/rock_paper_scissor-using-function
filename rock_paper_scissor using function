@@ -1,0 +1,75 @@
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <p> rock paper scissor</p>
+
+
+            <button onclick ="
+            pickComputerMove();
+            let result = '';
+
+            if (computermove === 'Rock') {
+              result ='Tie';
+            }else if(computermove === 'Paper') {
+              result = 'you lose';
+            }else if(computermove === 'scissor') {
+              result = 'you win';
+            }
+            alert(`you picked rock.computer picked  ${computermove}.${result}`);
+            ">Rock</button>
+        
+        
+        
+        <button onclick="
+            pickComputerMove(); 
+            let result = '';
+            if (computermove === 'Rock') {
+              result ='you win';
+            }else if(computermove === 'Paper') {
+              result = 'you tie';
+            }else if(computermove === 'scissor') {
+              result = 'you lose';
+            }
+            alert(`you picked paper.computer picked  ${computermove}.${result}`);
+        ">Paper</button>
+
+
+
+
+        <button onclick="
+            pickComputerMove();
+            let result = '';
+
+            if (computermove === 'Rock') {
+              result ='you lose';
+            }else if(computermove === 'Paper') {
+              result = 'you win';
+            }else if(computermove === 'scissor') {
+              result = 'you tie';
+            }
+            alert(`you picked scissor.computer picked  ${computermove}.${result}`);
+            ">Scissor</button>
+    
+    
+    
+    <script>
+          let computermove = '';
+          function pickComputerMove() {
+            const Random = Math.random();
+            
+
+            if(Random >= 0 && Random < 1/3 ) {
+              computermove = 'Rock';
+
+            }else if(Random >= 1/3 && Random < 2/3) {
+              computermove = 'Paper';
+            }else if (Random >= 2/3 && Random <1) {
+              computermove = 'scissor';
+        }
+      }
+    </script>
+  </body>
+</html>
